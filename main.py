@@ -42,6 +42,7 @@ def watermark(image_path, text_color):
 
             result = result.convert("RGB")
 
+            """ Create a directory 'watermarked_imgs'"""
             # Save the watermarked image to the watermarked_imgs folder
             result.save(f"watermarked_imgs/{image_path.split('/')[-1]}")
 
